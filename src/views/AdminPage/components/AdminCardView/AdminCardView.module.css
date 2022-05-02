@@ -1,0 +1,137 @@
+.principalContainer {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.titleAndAddBtn {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+.addBtn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 80px;
+  font-size: 14px;
+  height: 40px;
+  background-color: #fe4f22;
+}
+.addBtn:hover {
+  cursor: pointer;
+}
+.addBtn:focus {
+  outline: none;
+}
+.titleAndAddBtn h4 {
+  font-family: sans-serif;
+  color: #fe4f22;
+}
+
+.cardLayout {
+  margin-top: 20px;
+  height: 75vh;
+  width: 75vw;
+  background-color: white;
+  box-shadow: 10px 10px 25px grey;
+  overflow: scroll;
+}
+.tableAdminView {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 200%;
+}
+.tableAdminView tbody tr td {
+  padding: 10px;
+  height: 120px;
+}
+.tableAdminView tbody tr {
+  border: 1px solid #cdcccc;
+}
+.tableAdminView tr th {
+  border: 1px solid #cdcccc;
+}
+.tableAdminView .tdDescription {
+  width: 480px;
+  text-align: justify;
+}
+.tableAdminView .tdDescription {
+  text-align: justify;
+}
+
+.headerOfCard {
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40px;
+}
+.headWithFilterBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconBtn:hover {
+  cursor: pointer;
+}
+
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.listOfItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.tdImageAndVideo {
+  width: 120px;
+}
+.linkStyle {
+  text-decoration: none;
+}
+.editBtn {
+  height: 30px;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fe4f22;
+}
+.editBtn:hover {
+  cursor: pointer;
+}
+.editBtn:focus {
+  outline: none;
+}
+
+.deleteBtn {
+  height: 30px;
+  padding: 8px;
+  font-family: sans-serif;
+  color: white;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: brown;
+}
+.deleteBtn:hover {
+  cursor: pointer;
+}
+.deleteBtn:focus {
+  outline: none;
+}

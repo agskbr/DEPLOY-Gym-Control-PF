@@ -1,0 +1,27 @@
+.itemBtn {
+  border: none;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+.itemBtn:hover {
+  cursor: pointer;
+}
+.itemBtn:focus {
+  outline: none;
+}
+
+.itemOfSideBar {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.itemOfSideBar span {
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+}
