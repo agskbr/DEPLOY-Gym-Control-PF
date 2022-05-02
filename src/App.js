@@ -8,11 +8,10 @@ import HomePage from "./views/homePage/homePage";
 function App() {
   return (
     <div className="App">
-        <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/index.html" element={<HomePage />} />
         <Route path="/clases/:id" element={<Buy />} />
-        <Route exact path="/adminDashboard" element={<AdminPage />} />
+        <Route path="/adminDashboard" element={<AdminPage />} />
         <Route
           path="/adminDashboard/activity/edit/:id"
           element={<EditActivity />}

@@ -1,50 +1,51 @@
-import { useDispatch } from "react-redux";
-import { useState } from "react";
-import { filterByDay, orderActivities } from "../../store/actions";
-import "./style.css";
+import { useDispatch } from "react-redux"
+import { useState }  from "react"
+import { filterByDay, orderActivities } from "../../store/actions"
+import './style.css'
+
+
+
 
 export default function Filtrado() {
-  const [day, setDay] = useState("");
-  const [order, setOrder] = useState("");
 
-  let dispatch = useDispatch();
+    const [day, setDay] = useState('')
+    const [order, setOrder] = useState('')
 
-  function handleFilterChange(event) {
-    event.preventDefault();
-    setDay(event.target.value);
-    dispatch(filterByDay(event.target.value));
 
-    const order = document.getElementById("order");
-    order.selectedIndex = 0;
-  }
+    let dispatch = useDispatch()
 
-  function handleOrderChange(event) {
-    setOrder(event.target.value);
-    dispatch(orderActivities(event.target.value));
-  }
+    function handleFilterChange(event) {
+        event.preventDefault()
+        setDay(event.target.value)
+        dispatch(filterByDay(event.target.value))
 
-  return (
-    <form className="filters">
-      <select
-        onChange={handleFilterChange}
-        className="filter-by-day"
-        id="filter-day"
-      >
-        <option value="defaultFilter"> -- Por día -- </option>
-        <option value="lunes">Lunes</option>
-        <option value="martes">Martes</option>
-        <option value="miercoles">Miércoles</option>
-        <option value="jueves">Jueves</option>
-        <option value="viernes">Viernes</option>
-        <option value="sábado">Sábado</option>
-        <option value="domingo">Domingo</option>
-      </select>
+        const order = document.getElementById('order')
+        order.selectedIndex = 0
+    }
 
-      <select onChange={handleOrderChange} className="filter-by-day" id="order">
-        <option value="defaultOrder"> -- Ordenar -- </option>
-        <option value="precio">Por precio</option>
-        <option value="A-Z">A &rarr; Z</option>
-      </select>
-    </form>
-  );
+    function handleOrderChange(event) {
+        setOrder(event.target.value)
+        dispatch(orderActivities(event.target.value))
+    }
+
+    return (
+        <form className="filters">
+            <select onChange={handleFilterChange} className="filter-by-day" id="filter-day">
+                <option value='defaultFilter'> -- Por día -- </option>
+                <option value='lunes'>Lunes</option>
+                <option value='martes'>Martes</option>
+                <option value='miercoles'>Miércoles</option>
+                <option value='jueves'>Jueves</option>
+                <option value='viernes'>Viernes</option>
+                <option value='Sábado'>Sábado</option>
+                <option value='domingo'>Domingo</option>
+            </select>
+
+            <select onChange={handleOrderChange} className="filter-by-day" id="order">
+                <option value='defaultOrder'> -- Ordenar -- </option>
+                <option value='precio'>Por precio</option>
+                <option value='A-Z'>A &rarr; Z</option>
+            </select>
+        </form>
+    )
 }
