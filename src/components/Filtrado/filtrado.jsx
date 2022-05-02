@@ -36,7 +36,7 @@ export default function Filtrado() {
         <option value="miercoles">Miércoles</option>
         <option value="jueves">Jueves</option>
         <option value="viernes">Viernes</option>
-        <option value="sabado">Sábado</option>
+        <option value="sábado">Sábado</option>
         <option value="domingo">Domingo</option>
       </select>
 
